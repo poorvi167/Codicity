@@ -1,4 +1,4 @@
-package io.dbc.github.testify;
+package io.dbc.github.codicity;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
