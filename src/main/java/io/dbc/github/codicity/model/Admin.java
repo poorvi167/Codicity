@@ -9,5 +9,9 @@
 package io.dbc.github.codicity.model;
 
 public class Admin {
+    private String adminName;
+    private String adminPassword;
+    private String adminLocation;
+
 
 }
