@@ -13,5 +13,9 @@ public class Admin {
     private String adminPassword;
     private String adminLocation;
 
-
+    public Admin(String adminName, String adminPassword, String adminLocation) {
+        this.adminName = adminName;
+        this.adminPassword = adminPassword;
+        this.adminLocation = adminLocation;
+    }
 }
