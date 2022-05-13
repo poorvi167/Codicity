@@ -58,4 +58,12 @@ public class Admin {
         return Objects.hash(adminName, adminPassword, adminLocation);
     }
 
+    @Override
+    public String toString() {
+        return "Admin{" +
+                "adminName='" + adminName + '\'' +
+                ", adminPassword='" + adminPassword + '\'' +
+                ", adminLocation='" + adminLocation + '\'' +
+                '}';
+    }
 }
