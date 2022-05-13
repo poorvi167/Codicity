@@ -8,6 +8,8 @@
 
 package io.dbc.github.codicity.model;
 
+import java.util.Objects;
+
 public class Admin {
     private String adminName;
     private String adminPassword;
@@ -42,4 +44,18 @@ public class Admin {
     public void setAdminLocation(String adminLocation) {
         this.adminLocation = adminLocation;
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Admin admin = (Admin) o;
+        return Objects.equals(adminName, admin.adminName) && Objects.equals(adminPassword, admin.adminPassword) && Objects.equals(adminLocation, admin.adminLocation);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(adminName, adminPassword, adminLocation);
+    }
+
 }
